@@ -15,7 +15,7 @@
         });
 
         if (response.ok) {
-          status.textContent = "✅ Message sent successfully!";
+          status.textContent = "Message sent successfully!";
           status.style.display = "block";
           status.classList.remove("text-danger");
           status.classList.add("text-success");
@@ -29,6 +29,13 @@
         status.classList.remove("text-success");
         status.classList.add("text-danger");
       }
+      status.style.display = "block";
+
+      setTimeout(() => {
+        status.classList.remove('text-success','text-danger')
+        status.style.display = "none";
+        status.textContent = "";
+      }, 6000);
     });
   }
 
