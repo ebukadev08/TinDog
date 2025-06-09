@@ -196,29 +196,60 @@
       </div>
     </section>
 
-    <!-- Contact Us -->
 
     <!-- Contact Section -->
 <section id="contact" class="py-5 bg-light">
   <div class="container">
-    <h2 class="text-center mb-4">Contact Us</h2>
-    <p class="text-center mb-5 text-muted">Have questions or need help? Send us a message below.</p>
-    
-    <div class="row justify-content-center">
-      <div class="col-md-8 col-lg-6">
-        <form>
+    <div class="row">
+      <!-- First Form -->
+      <div class="col-md-6">
+        <form id="form1" action="https://formspree.io/f/mgvyayde" method="POST">
+
+          <input type="text" name="_gotcha" style="display:none">
+
+          <h2 class="text-center mb-4">Order Now</h2>
+          <p class="text-center mb-5 text-muted">Do you want to order? use the form below.</p>
           <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" required>
+            <label for="name1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name1" name="name" required>
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" required>
+            <label for="email1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email1" name="email" required>
           </div>
           <div class="mb-3">
-            <label for="message" class="form-label">Your Message</label>
-            <textarea class="form-control" id="message" rows="4" required></textarea>
+            <label for="dogName1" class="form-label">Dog Name</label>
+            <input type="text" class="form-control" id="dogName1" name="dogName" required>
           </div>
+          <div class="mb-3">
+            <label for="message1" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message1" name="message" rows="4" required></textarea>
+          </div>
+          <div id="status1" class="text-success mb-3" style="display:none;"></div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Second Form -->
+      <div class="col-md-6">
+        <form id="form2" action="https://formspree.io/f/mgvyayde" method="POST">
+          <h2 class="text-center mb-4">Contact Us</h2>
+         <p class="text-center mb-5 text-muted">Have questions or need help? Send us a message below.</p>
+          <div class="mb-3">
+            <label for="name2" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name2" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email2" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email2" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message2" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message2" name="message" rows="4" required></textarea>
+          </div>
+          <div id="status2" class="text-success mb-3" style="display:none;"></div>
           <div class="d-grid">
             <button type="submit" class="btn btn-primary">Send Message</button>
           </div>
